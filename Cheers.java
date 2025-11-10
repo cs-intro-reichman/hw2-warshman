@@ -9,6 +9,7 @@ Great work boaz!
 public class Cheers {
         public static void main(String[] args) {
 	    String word = args[0].toUpperCase();
+            int reps = Integer.parseInt(args[1]);
             String aOrAn = "a ";
             String condition = "AEFHILMNORSX";
 
@@ -32,7 +33,7 @@ public class Cheers {
             
             System.out.println("What does that spell?");
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < reps; i++) {
                 System.out.println(word + "!!!");
             }
         }
